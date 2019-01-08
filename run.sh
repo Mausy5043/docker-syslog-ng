@@ -2,8 +2,7 @@
 
 tag="$1"
 
-docker run --rm \
-           -d \
+docker run -d \
            --restart unless-stopped \
            -v "${HOME}/.config/docker/etc_syslog-ng_syslog-ng.conf":/etc/syslog-ng/syslog-ng.conf \
            -v /srv/array1/netsyslog:/srv/syslognet \
