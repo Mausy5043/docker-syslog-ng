@@ -26,7 +26,8 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
 RUN dirname $(find / -name "libjvm.so") > /etc/ld.so.conf.d/openjdk-libjvm.conf \
  && ldconfig
 
-RUN groupadd -g 1000 syslog-grp
+RUN useradd -u 1000 syslog-usr \
+ && groupadd -g 1000 syslog-grp
 
 EXPOSE 514/udp
 EXPOSE 601/tcp
