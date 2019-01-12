@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cmd="{$1}"
+cmd="${1}"
 
 # Find out where we're running from
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
