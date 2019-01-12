@@ -22,7 +22,7 @@ It uses a custom `syslog-ng.conf` that is kept in `${HOME}/.config/docker/etc_sy
 ```
 Stops the container and then deletes it. This allows for immediate running a container with the same name without the need to `docker rm` it manually.
 
-##Updating
+## Updating
 
 ```
 ./update.sh [--all]
