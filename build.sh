@@ -13,4 +13,4 @@ if [ ! -f Dockerfile ]; then
 fi
 
 # build a local image
-docker build -t "mausy5043/syslog-ng-server:${tag}" .
+docker build -t "mausy5043/syslog-ng:${tag}" .

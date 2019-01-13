@@ -19,4 +19,4 @@ docker run -d \
            -p 514:514/udp -p 601:601 -p 6514:6514 \
            --name syslog-ng \
            -h syslog-ng \
-           "mausy5043/syslog-ng-server:${tag}"
+           "mausy5043/syslog-ng:${tag}"
