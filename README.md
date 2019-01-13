@@ -1,5 +1,9 @@
 # docker-syslog-ng
 
+It is advised to pull the git repository and build you own image provided the latest build was successful.
+On GitHub: [https://github.com/Mausy5043/docker-syslog-ng](https://github.com/Mausy5043/docker-syslog-ng)
+
+
 ## Build a fresh image
 
 ```
