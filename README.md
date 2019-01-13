@@ -1,6 +1,6 @@
 # docker-syslog-ng
 
-It is advised to pull the git repository and build you own image provided the latest build was successful.
+It is advised to clone the Git repository and build your own image from that, provided the latest build (see [Docker Hub](https://hub.docker.com/r/mausy5043/syslog-ng)) was successful.
 On GitHub: [https://github.com/Mausy5043/docker-syslog-ng](https://github.com/Mausy5043/docker-syslog-ng)
 
 
