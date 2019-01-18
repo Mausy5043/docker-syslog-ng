@@ -1,11 +1,6 @@
 FROM debian:latest
 MAINTAINER Mausy5043
 
-ENV TZ=Europe/Amsterdam
-
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
- && echo $TZ > /etc/timezone
-
 RUN apt-get -qqy update    \
  && apt-get -qqy autoclean  \
  && apt-get -qqy autoremove  \
@@ -14,7 +9,13 @@ RUN apt-get -qqy update    \
                         gnupg2  \
                         locales  \
                         syslog-ng \
+                        tzdata     \
                         openjdk-8-jdk-headless
+
+ENV TZ=Europe/Amsterdam
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
+ && echo $TZ > /etc/timezone
 
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
