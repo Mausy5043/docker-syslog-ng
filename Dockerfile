@@ -34,3 +34,4 @@ EXPOSE 601/tcp
 EXPOSE 6514/tcp
 
 ENTRYPOINT ["/usr/sbin/syslog-ng", "-F"]
+
